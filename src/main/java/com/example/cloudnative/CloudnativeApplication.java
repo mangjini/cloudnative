@@ -15,7 +15,7 @@ public class CloudnativeApplication {
 	String home() {
 		return "Hello World34!!!!!!";
 	}
-	
+
 	public static void main(String[] args) {
 		SpringApplication.run(CloudnativeApplication.class, args);
 	}
