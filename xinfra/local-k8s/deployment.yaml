@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cloudnative
+spec:
+  selector:
+    matchLabels:
+      app: cloudnative
+  template:
+    metadata:
+      labels:
+        app: cloudnative
+    spec:
+      containers:
+      - name: cloudnative
+        image: mj030kk/cloudnative
+        ports:
+        - containerPort: 8080
